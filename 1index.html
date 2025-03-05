@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najlepszy Tata!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff; /* Jasny błękit */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6347; /* Czerwony pomarańczowy */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Cień dla tytułu */
+        }
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .message {
+            font-size: 1.5em;
+            line-height: 1.8;
+            text-align: center;
+            color: #4b0082; /* Indygo */
+            display: none; /* Ukrywamy życzenia początkowo */
+        }
+        .button {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 15px;
+            background-color: #32cd32; /* Jasny zielony */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #228b22; /* Ciemny zielony */
+        }
+        footer {
+            background-color: #ff6347; /* Czerwony pomarańczowy */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+    <script>
+        // Funkcja, która pokaże życzenia po kliknięciu przycisku
+        function showMessage() {
+            var message = document.getElementById("message");
+            message.style.display = "block"; // Pokazujemy życzenia
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Najlepszy Tata!</h1>
+</header>
+
+<div class="container">
+    <div class="image-container">
+        <!-- Możesz dodać swoje własne zdjęcie poniżej, podmieniaj URL na link do swojego zdjęcia -->
+        <img src="https://via.placeholder.com/800x400.png?text=Zdjęcie+Taty" alt="Najlepszy Tata">
+    </div>
+
+    <button class="button" onclick="showMessage()">Kocham Cię Tato!</button>
+
+    <div class="message" id="message">
+        <p>Drogi Tato,</p>
+        <p>Chciałem Ci powiedzieć, jak bardzo Cię kocham i doceniam. Twoja obecność, wsparcie i miłość są dla mnie niezastąpione. Jesteś najlepszym tatą na świecie, i to nie tylko w dniu specjalnych okazji!</p>
+        <p>Każdy dzień spędzony z Tobą jest dla mnie wyjątkowy. Dziękuję za Twoją cierpliwość, mądrość, troskę oraz poczucie humoru, które zawsze sprawiają, że świat wydaje się być lepszym miejscem. Kocham Cię i jestem wdzięczny za wszystko, co robisz!</p>
+        <p>Z najlepszymi życzeniami,</p>
+        <p>twoj synek</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Najlepszy Tata - Strona stworzona z miłością!</p>
+</footer>
+
+</body>
+</html>
